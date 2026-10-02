@@ -1,0 +1,71 @@
+{
+  "name": "agentperms",
+  "version": "0.1.0",
+  "description": "One permission policy for every AI coding agent. Write agentperms.yaml once, generate native allowlists for Claude Code, Codex CLI, Gemini CLI and Cursor CLI, audit what is allowed everywhere, and mine your local history for a safe allowlist.",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "cursor",
+    "permissions",
+    "allowlist",
+    "ai-agents",
+    "security",
+    "developer-tools",
+    "llm",
+    "cli"
+  ],
+  "homepage": "https://github.com/paulochastinet/agentperms#readme",
+  "bugs": {
+    "url": "https://github.com/paulochastinet/agentperms/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulochastinet/agentperms.git"
+  },
+  "license": "MIT",
+  "author": "Paulo Chastinet (https://github.com/paulochastinet)",
+  "type": "module",
+  "bin": {
+    "agentperms": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepare": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "jsonc-parser": "^3.3.1",
+    "picocolors": "^1.1.1",
+    "smol-toml": "^1.9.0",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsup": "^8.5.1",
+    "typescript": "~5.9",
+    "vite": "^6.4.3",
+    "vitest": "^3.2.7"
+  }
+}

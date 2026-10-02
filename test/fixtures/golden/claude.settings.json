@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(npm run test *)",
+      "Bash(ls *)",
+      "WebFetch(domain:docs.github.com)",
+      "WebFetch(domain:*.npmjs.com)",
+      "mcp__github__*"
+    ],
+    "ask": [
+      "Bash(git push *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(curl *)",
+      "Bash(sh)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(secrets/**)",
+      "Edit(.git/**)",
+      "mcp__*__delete_*"
+    ]
+  }
+}

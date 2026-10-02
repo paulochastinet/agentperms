@@ -1,0 +1,10 @@
+{
+  // user-level Claude Code settings (JSONC comments are tolerated)
+  "model": "opus",
+  "permissions": {
+    "allow": ["Bash(git status:*)", "Bash(npm run test:*)", "Bash(curl:*)", "Read(**)", "WebFetch"],
+    "deny": ["Read(./.env)"],
+    "defaultMode": "bypassPermissions"
+  },
+  "skipDangerousModePermissionPrompt": true
+}

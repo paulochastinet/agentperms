@@ -1,0 +1,5 @@
+{
+  "general": { "defaultApprovalMode": "yolo" },
+  "tools": { "allowed": ["run_shell_command(git status)", "run_shell_command(git push)"] },
+  "mcpServers": { "fs": { "command": "node", "args": ["fs.js"], "trust": true } }
+}

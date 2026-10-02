@@ -1,0 +1,11 @@
+export { parsePolicy, loadPolicy, findPolicyFile, PolicyError, type LoadedPolicy, type PolicyIssue } from './policy/load.js';
+export { renderPreset, detectPreset, PRESETS, type Preset } from './policy/presets.js';
+export { addShellPatterns } from './policy/write.js';
+export { planApply, executePlan, planDiffs, mergeJsonLists, replaceTomlBlock, type Plan, type FileChange } from './apply.js';
+export { audit, worstSeverity, type AuditReport, type Finding } from './audit.js';
+export { mine, aggregate, derivePattern, allowCandidates, askCandidates, parseSince, type SuggestReport, type PatternStat, type Observation } from './suggest.js';
+export { classifyCommand, classifyPattern, type Verdict, type SafetyClass } from './safety.js';
+export { maskCommand } from './secrets.js';
+export { TARGETS } from './targets/index.js';
+export { run } from './run.js';
+export * from './types.js';

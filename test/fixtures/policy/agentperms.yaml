@@ -1,0 +1,12 @@
+# Reference policy used by the golden-file tests (the example from the README).
+version: 1
+shell:
+  allow: ["git status", "git diff *", "npm run test *", "ls *"]
+  ask:   ["git push *"]
+  deny:  ["rm -rf *", "curl * | sh"]
+files:
+  read:  { deny: [".env", ".env.*", "secrets/**"] }
+  write: { deny: [".git/**"] }
+web:  { allow: ["docs.github.com", "*.npmjs.com"] }
+mcp:  { allow: ["github:*"], deny: ["*:delete_*"] }
+targets: [claude, codex, gemini, cursor]

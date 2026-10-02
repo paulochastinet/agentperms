@@ -1,0 +1,8 @@
+# written by the Codex TUI
+prefix_rule(pattern = ["git", ["status", "log"]], decision = "allow")
+prefix_rule(
+    pattern = ["git", "push"],
+    decision = "forbidden",
+    justification = "never push from the agent",
+)
+prefix_rule(pattern = ["npm"], decision = "allow")

@@ -1,0 +1,21 @@
+{"timestamp": "2026-09-30T09:00:00.000Z", "type": "session_meta", "payload": {"id": "codex-1", "cwd": "/work/app", "originator": "codex_cli_rs"}}
+{"timestamp": "2026-09-30T09:00:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "exec_command", "arguments": "{\"cmd\": \"git status\"}", "call_id": "call_0"}}
+{"timestamp": "2026-09-30T09:00:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_0", "output": "{\"output\": \"ok\", \"metadata\": {\"exit_code\": 0}}"}}
+{"timestamp": "2026-09-30T09:01:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "exec_command", "arguments": "{\"cmd\": \"git log -3\"}", "call_id": "call_1"}}
+{"timestamp": "2026-09-30T09:01:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_1", "output": "{\"output\": \"ok\", \"metadata\": {\"exit_code\": 0}}"}}
+{"timestamp": "2026-09-30T09:02:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "shell", "arguments": "{\"command\": [\"bash\", \"-lc\", \"git status && npm test\"]}", "call_id": "call_2"}}
+{"timestamp": "2026-09-30T09:02:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_2", "output": "{\"output\": \"ok\", \"metadata\": {\"exit_code\": 0}}"}}
+{"timestamp": "2026-09-30T09:03:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "shell", "arguments": "{\"command\": [\"ls\", \"-la\"]}", "call_id": "call_3"}}
+{"timestamp": "2026-09-30T09:03:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_3", "output": "{\"output\": \"ok\", \"metadata\": {\"exit_code\": 0}}"}}
+{"timestamp": "2026-09-30T09:04:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "shell_command", "arguments": "{\"command\": \"git status\"}", "call_id": "call_4"}}
+{"timestamp": "2026-09-30T09:04:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_4", "output": "{\"output\": \"ok\", \"metadata\": {\"exit_code\": 0}}"}}
+{"timestamp": "2026-09-30T09:05:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "exec_command", "arguments": "{\"cmd\": \"export OPENAI_API_KEY=sk-proj-abcdefghijklmnopqrstuvwxyz0123456789ABCD && curl https://api.openai.com\"}", "call_id": "call_5"}}
+{"timestamp": "2026-09-30T09:05:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_5", "output": "{\"output\": \"ok\", \"metadata\": {\"exit_code\": 0}}"}}
+{"timestamp": "2026-09-30T09:06:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "exec_command", "arguments": "{\"cmd\": \"git push --force\"}", "call_id": "call_6"}}
+{"timestamp": "2026-09-30T09:06:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_6", "output": "exec command rejected by user"}}
+{"timestamp": "2026-09-30T09:07:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "exec_command", "arguments": "{\"cmd\": \"npm test\"}", "call_id": "call_7"}}
+{"timestamp": "2026-09-30T09:07:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_7", "output": "{\"output\": \"ok\", \"metadata\": {\"exit_code\": 0}}"}}
+{"timestamp": "2026-09-30T09:08:00.000Z", "type": "response_item", "payload": {"type": "function_call", "name": "exec_command", "arguments": "{\"cmd\": \"git diff\"}", "call_id": "call_8"}}
+{"timestamp": "2026-09-30T09:08:01.000Z", "type": "response_item", "payload": {"type": "function_call_output", "call_id": "call_8", "output": "{\"output\": \"ok\", \"metadata\": {\"exit_code\": 0}}"}}
+{"timestamp": "2026-09-30T09:20:00.000Z", "type": "response_item", "payload": {"type": "local_shell_call", "call_id": "ls1", "action": {"type": "exec", "command": ["git", "diff", "--stat"]}}}
+{"timestamp": "2026-09-30T09:20:00.000Z", "type": "event_msg", "payload": {"type": "token_count"}}

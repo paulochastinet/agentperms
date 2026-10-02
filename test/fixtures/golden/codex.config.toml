@@ -1,0 +1,12 @@
+# >>> agentperms managed block: edit agentperms.yaml, not this block >>>
+# Permission profile generated from files.read / files.write. It is NOT active until you set
+# default_permissions = "agentperms" (which replaces sandbox_mode / [sandbox_workspace_write]).
+[permissions.agentperms]
+extends = ":workspace"
+
+[permissions.agentperms.filesystem.":workspace_roots"]
+"**/.env" = "deny"
+"**/.env.*" = "deny"
+"secrets/**" = "deny"
+".git/**" = "read"
+# <<< agentperms managed block <<<

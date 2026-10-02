@@ -1,0 +1,42 @@
+name: Bug report
+description: A wrong mapping, a broken merge, a missed finding...
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead? If a generated config is MORE permissive than your policy, please use private vulnerability reporting instead (see SECURITY.md).
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command
+      placeholder: npx agentperms apply --dry-run --target codex
+    validations:
+      required: true
+  - type: textarea
+    id: policy
+    attributes:
+      label: Minimal agentperms.yaml
+      render: yaml
+  - type: textarea
+    id: output
+    attributes:
+      label: Output / generated file
+      description: Paste the relevant output. Please remove secrets, tokens, private paths and host names.
+      render: text
+  - type: dropdown
+    id: agent
+    attributes:
+      label: Agent(s) involved
+      multiple: true
+      options: [Claude Code, Codex CLI, Gemini CLI, Cursor CLI, Not agent-specific]
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: agentperms 0.1.0, Node 22.11, macOS 15, Claude Code 2.1.x
+    validations:
+      required: true

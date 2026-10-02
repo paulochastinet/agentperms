@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Shell(git:status)",
+      "Shell(git:diff)",
+      "Shell(git:diff *)",
+      "Shell(npm:run test)",
+      "Shell(npm:run test *)",
+      "Shell(ls)",
+      "WebFetch(docs.github.com)",
+      "WebFetch(*.npmjs.com)",
+      "Mcp(github:*)"
+    ],
+    "deny": [
+      "Shell(rm:-rf)",
+      "Shell(rm:-rf *)",
+      "Shell(curl)",
+      "Shell(sh)",
+      "Read(.env)",
+      "Read(**/.env)",
+      "Read(.env.*)",
+      "Read(**/.env.*)",
+      "Read(secrets/**)",
+      "Write(.git/**)",
+      "Mcp(*:delete_*)"
+    ]
+  }
+}

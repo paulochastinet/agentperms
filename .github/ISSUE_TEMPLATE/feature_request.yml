@@ -1,0 +1,20 @@
+name: Feature request
+description: A new agent, a new rule type, a new audit check...
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What do you want to allow, prevent or find out?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: How should agentperms help? Links to the agent's official permission docs are very welcome.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered

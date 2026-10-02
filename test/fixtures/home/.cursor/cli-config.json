@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "editor": { "vimMode": false },
+  "permissions": { "allow": ["Shell(ls)", "Shell(git)", "Read(**)", "Write(.git/**)", "WebFetch(*)"], "deny": ["Shell(rm)"] }
+}
