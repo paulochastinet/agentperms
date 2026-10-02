@@ -313,12 +313,12 @@ profile but doesn't switch your sandbox for you: set `default_permissions = "age
 
 ## Part of a toolkit
 
-Small, local, zero-config tools for living with AI coding agents:
+`agentperms` is one of four small, single-purpose CLIs for people building with AI agents:
 
-- [**context-diet**](https://github.com/paulochastinet/context-diet): what your agents load into context before you type a word.
-- [**promptwarden**](https://github.com/paulochastinet/promptwarden): scan agent instructions, skills and MCP configs for injection and dangerous commands.
-- [**mcp-diff**](https://github.com/paulochastinet/mcp-diff): see what changed between versions of an MCP server's tools.
-- **agentperms**: one permission policy for every agent (this repo).
+- [**context-diet**](https://github.com/paulochastinet/context-diet): see what your coding agent loads before you type a word (instruction files, skills, MCP tool schemas) and how many tokens it costs.
+- [**promptwarden**](https://github.com/paulochastinet/promptwarden): scan agent skills, rules and MCP configs for prompt injection, hidden Unicode, exfiltration and secrets.
+- [**mcp-diff**](https://github.com/paulochastinet/mcp-diff): catch breaking and risky changes in MCP servers before your users' agents do.
+- **agentperms** (this repo): one permission policy for Claude Code, Codex, Gemini CLI and Cursor, plus an audit of risky grants.
 
 ## Contributing
 
